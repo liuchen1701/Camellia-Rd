@@ -1,3 +1,31 @@
 /* stylesheet for Camellia Rd's website.
 */
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+/* Header masthead styling */
+header.masthead {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+	display: inline-block;
+  color: white;
+  background-image: url("../img/masthead.jpeg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+header.masthead .header-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 75px 30px 25px;
+	text-align: center; 
+}
 
