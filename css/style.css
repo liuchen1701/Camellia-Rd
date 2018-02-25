@@ -4,7 +4,7 @@
 /* setting variables
 /**********************************************************************/
 :root {
-	--primary-color: #fff;
+	--primary-color: #ffffff;
 	--secondary-color: #cbcbcb;
 	--base-color: #9c7449;
 	--highlight-color: #89af55;
@@ -21,8 +21,16 @@ body, html {
   padding: 0;
 }
 
+section {
+	padding: 50px 0;
+}
+
 .bg-primary {
-	
+	background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+	background-color: var(--secondary-color) !important;
 }
 
 /**********************************************************************/
@@ -47,7 +55,6 @@ body, html {
   margin-top: 5px;
   margin-left: -76px;
 }
-
 
 /**********************************************************************/
 /* styling for the navbar
@@ -76,6 +83,7 @@ header.masthead {
   position: relative;
 	width: 100%;
   min-height: 600px;
+	margin-bottom: -10px;
   text-align: center;
 	display: inline-block;
   color: white;
@@ -95,6 +103,11 @@ header.masthead .header-content {
 	text-align: center;
 }
 
+header.masthead img {
+	width: 240px;
+	height: 72px;
+}
+
 /* Header masthead styling for window width more than 768px */
 @media (min-width: 768px) {
 	header.masthead {
@@ -109,5 +122,44 @@ header.masthead .header-content {
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%); 
+	}
+	
+	header.masthead img {
+		width: 320px;
+		height: 97px;
+	}
+}
+
+/**********************************************************************/
+/* styling for info cards (formatting image and text content)
+/**********************************************************************/
+.info {
+	text-align: center;
+	padding: 0px 50px;
+}
+
+.gallery {
+	position: relative;
+	max-width: 75%;
+	height: auto;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.info {
+		padding: 0 5px;
+	}
+	
+	/* text is on the left, images on the right */
+	div.info-primary {
+		text-align: left;
+	}
+
+	/* text is on the right, images on the left */
+	div.info-secondary {
+		text-align: right;
 	}
 }
