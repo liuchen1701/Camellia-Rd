@@ -133,15 +133,16 @@ header.masthead img {
 /**********************************************************************/
 /* styling for info cards (formatting image and text content)
 /**********************************************************************/
-.info {
+.info-secondary, .info-primary {
 	text-align: center;
-	padding: 0px 50px;
 }
 
 .gallery {
-	position: relative;
-	max-width: 270px;
+	left: 50%;
+	max-width: 720px;
 	height: auto;
+	position: relative;
+	transform: translate(-50%);
 }
 
 .gallery img {
@@ -149,8 +150,8 @@ header.masthead img {
 }
 
 @media (min-width: 768px) {
-	.info {
-		padding: 0 5px;
+	.gallery {
+		
 	}
 	
 	/* text is on the left, images on the right */
@@ -169,8 +170,8 @@ header.masthead img {
 /**********************************************************************/
 footer {
 	width: 100%;
-	background: #000000;
-	color: var(--primary-color);
+	background: var(--primary-color);
+	color: var(--text-dark);
 }
 
 .footer-content {
@@ -192,7 +193,7 @@ footer {
 .social-media-icon {
 	font-size: 30px;
 	width: 30px;
-	color: var(--primary-color);
+	color: var(--text-dark);
 }
 
 .social-media-icon:hover {
