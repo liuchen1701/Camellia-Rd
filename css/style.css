@@ -1,5 +1,10 @@
 /* stylesheet for Camellia Rd's website.*/
-
+/* the following values are the corresponding screen sizes:
+/* xs: <	576px
+/* sm: >=	576px
+/* md: >=	768px
+/* lg: >=	992px
+/* xl: >=	1200px
 /**********************************************************************/
 /* setting variables
 /**********************************************************************/
@@ -77,7 +82,7 @@ section {
 }
 
 /**********************************************************************/
-/* styling for the masthead (landing screen)
+/* styling for the masthead (landing pictures)
 /**********************************************************************/
 header.masthead {
   position: relative;
@@ -87,7 +92,6 @@ header.masthead {
   text-align: center;
 	display: inline-block;
   color: white;
-  background-image: url("../img/masthead.jpeg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -106,6 +110,10 @@ header.masthead .header-content {
 header.masthead img {
 	width: 240px;
 	height: 72px;
+}
+
+#landing-about {
+  background-image: url("../img/landing-default.jpeg");
 }
 
 /* Header masthead styling for window width more than 768px */
@@ -150,10 +158,6 @@ header.masthead img {
 }
 
 @media (min-width: 768px) {
-	.gallery {
-		
-	}
-	
 	/* text is on the left, images on the right */
 	div.info-primary {
 		text-align: left;
@@ -162,6 +166,34 @@ header.masthead img {
 	/* text is on the right, images on the left */
 	div.info-secondary {
 		text-align: right;
+	}
+}
+
+/**********************************************************************/
+/* menu styling
+/**********************************************************************/
+#menu {
+	margin-top: 56px;
+	text-align: center;
+}
+
+.menu-items {
+	text-align: center;
+	font-weight: bold;
+	color: var(--text-dark);
+}
+
+.menu-items:hover {
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	color: var(--highlight-color);
+}
+
+@media (min-width: 576px) {
+	.menu-items {
+		text-align: left;
+	column-count: 2;
 	}
 }
 
