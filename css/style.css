@@ -18,6 +18,14 @@
 }
 
 /**********************************************************************/
+/* fonts for our use (cut out fonts we don't use later to cut down on load time)
+/**********************************************************************/
+@font-face {
+	font-family: "brix-sans-light";
+	src: url("../fonts/Brix Sans/HVD Fonts - BrixSansLight.otf") format("opentype");
+}
+
+/**********************************************************************/
 /* generic styling for general html tags
 /**********************************************************************/
 body, html {
@@ -26,6 +34,11 @@ body, html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+h1 {
+	font-family: brix-sans-light;
+	font-weight: bold;
 }
 
 section {
