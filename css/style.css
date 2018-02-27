@@ -189,17 +189,15 @@ header.masthead img {
 	color: var(--text-dark);
 }
 
-.menu-items:hover {
-	border-style: solid;
-	border-width: 1px;
+.menu-titles:hover {
+	background-color: var(--secondary-color);
 	cursor: pointer;
-	color: var(--highlight-color);
 }
 
 @media (min-width: 576px) {
 	.menu-items {
 		text-align: left;
-	column-count: 2;
+		column-count: 2;
 	}
 }
 
@@ -208,6 +206,13 @@ header.masthead img {
 /**********************************************************************/
 .press-logo {
 	margin: 30px 0 30px 0;
+}
+
+/**********************************************************************/
+/* styling for services page
+/**********************************************************************/
+#dd-logo {
+	max-width: 240px;
 }
 
 /**********************************************************************/

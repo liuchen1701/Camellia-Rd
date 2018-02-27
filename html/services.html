@@ -21,13 +21,62 @@
 	
 	<body>
 		
+		<!-- Navigation --> <!-- todo: fix navbar menu -->
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" id="logo" href="index.html#page-top">
+					<img src="../img/logo.jpg" width="159.5" height="48.3">
+				</a> <!-- 2074x628 --> 
+        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item nav-item2">
+              <a class="nav-link js-scroll-trigger" href="press.html">Press</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger live-page" href="#">Services</a>
+            </li>
+            <li class="nav-item nav-item2">
+              <a class="nav-link js-scroll-trigger" href="merchandise.html">Merchandise</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+		
 		<section id="services">
 			<div class="container">
 				<div class="row justify-content-center">
 					<h1>Services</h1>
+					<div class="col-12">
+						<h2>Catering Requests</h2>
+						<p>A description about their catering service here.</p>
+						<a class="btn btn-secondary" href="http://www.camelliard.com/catering/">Leave Info</a>
+						<hr>
+					</div>
+					<div class="col-12">
+						<h2>Door Dash</h2>
+						<img id="dd-logo" src="../img/doordash-square-red.jpg"/>
+						<p>Get your boba milk tea delivered!</p>
+						<p>We've partnered with DoorDash to get your favorite boba milk teas delivered right to you.</p>
+						<a class="btn btn-secondary" href="https://www.doordash.com/store/camellia-road-tea-bar-san-diego-156799/">Order Deliery</a>
+					</div>
 				</div>
 			</div>
 		</section>
+		
+		
+		<!-- Bootstrap core JavaScript -->
+		<script src="../vendor/jquery/jquery.min.js"></script>
+		<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 		
 	</body>
 	
