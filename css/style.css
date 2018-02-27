@@ -14,6 +14,7 @@
 	--base-color: #91672F;
 	--highlight-color: #88B04B;
 	--text-dark: #434343;
+	--text-light: #bdbdbd;
 }
 
 /**********************************************************************/
@@ -43,6 +44,10 @@ a.live-page {
 
 .bg-secondary {
 	background-color: var(--secondary-color) !important;
+}
+
+.text-soft {
+	color: var(--text-light);
 }
 
 /**********************************************************************/
@@ -77,7 +82,7 @@ a.live-page {
 }
 
 .nav-item a {
-	color: white;
+	color: var(--text-dark);
 }
 
 .nav-item {
@@ -206,7 +211,12 @@ header.masthead img {
 /* styling for press page
 /**********************************************************************/
 .press-logo {
-	margin: 30px 0 30px 0;
+/*	margin: 30px 0 30px 0;*/
+	padding: 30px;
+}
+
+.press-logo:hover {
+	background-color: var(--secondary-color);
 }
 
 /**********************************************************************/
@@ -214,6 +224,13 @@ header.masthead img {
 /**********************************************************************/
 #dd-logo {
 	max-width: 240px;
+}
+
+/**********************************************************************/
+/* styling for merchandise page
+/**********************************************************************/
+#gift-card {
+	max-width: 360px;
 }
 
 /**********************************************************************/
