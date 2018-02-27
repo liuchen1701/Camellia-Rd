@@ -11,8 +11,8 @@
 :root {
 	--primary-color: #ffffff;
 	--secondary-color: #cbcbcb;
-	--base-color: #9c7449;
-	--highlight-color: #89af55;
+	--base-color: #91672F;
+	--highlight-color: #88B04B;
 	--text-dark: #434343;
 }
 
@@ -24,6 +24,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -102,7 +103,7 @@ header.masthead {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover;
 }
 
 header.masthead .header-content {
@@ -114,8 +115,8 @@ header.masthead .header-content {
 }
 
 header.masthead img {
-	width: 240px;
-	height: 72px;
+	width: 320px;
+	height: 100px;
 }
 
 #landing-about {
@@ -126,21 +127,21 @@ header.masthead img {
 @media (min-width: 768px) {
 	header.masthead {
 		height: 100%;
-		min-height: 600px; 
+		min-height: 600px;
 	}
-  
+
 	header.masthead .header-content {
 		position: absolute;
 		top: 48%;
 		padding: 0 50px;
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
-		transform: translateY(-50%); 
+		transform: translateY(-50%);
 	}
-	
+
 	header.masthead img {
-		width: 320px;
-		height: 97px;
+		width: 640px;
+		height: 200px;
 	}
 }
 
@@ -221,9 +222,13 @@ footer {
 
 .footer-content {
 	font-size: 15px;
-	text-align: center;
+	/*text-align: center;*/
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+.footer-content.social-media {
+  text-align: center;
 }
 
 .fa-map-marker {
