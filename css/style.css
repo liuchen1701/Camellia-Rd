@@ -207,7 +207,8 @@ header.masthead img {
 /**********************************************************************/
 /* menu styling, and other pages
 /**********************************************************************/
-#menu, #press, #services, #merchandise {
+#menu, #press, #services, #merchandise, #careers { 
+	/* padding for all pages */
 	margin-top: 56px;
 	text-align: center;
 }
