@@ -228,7 +228,7 @@ header.masthead img {
 }
 
 @media (min-width: 576px) {
-	.menu-item {
+	.menu-cat .col-sm {
 		column-count: 2;
 	}
 }
