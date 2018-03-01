@@ -213,20 +213,22 @@ header.masthead img {
 	text-align: center;
 }
 
-.menu-items {
-	text-align: center;
-	font-weight: bold;
+.menu-item {
+	text-align: left;
 	color: var(--text-dark);
 }
 
-.menu-titles:hover {
+.menu-cat {
+	padding-top: 20px;
+}
+
+.menu-cat:hover {
 	background-color: var(--secondary-color);
 	cursor: pointer;
 }
 
 @media (min-width: 576px) {
-	.menu-items {
-		text-align: left;
+	.menu-item {
 		column-count: 2;
 	}
 }
@@ -255,6 +257,19 @@ header.masthead img {
 /**********************************************************************/
 #gift-card {
 	max-width: 360px;
+}
+
+/**********************************************************************/
+/* styling for forms
+/**********************************************************************/
+.forms {
+	margin-top: 30px;
+}
+
+iframe {
+	height: 700px;
+	max-width: 760px;
+	min-width: 90%;
 }
 
 /**********************************************************************/
