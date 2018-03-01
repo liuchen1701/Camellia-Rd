@@ -249,7 +249,21 @@ header.masthead img {
 /* styling for services page
 /**********************************************************************/
 #dd-logo {
-	max-width: 240px;
+	max-width: 200px;
+}
+
+.service-card {
+	text-align: center;
+}
+
+.service-card div {
+	padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+	.service-text {
+		text-align: left;
+	}
 }
 
 /**********************************************************************/
