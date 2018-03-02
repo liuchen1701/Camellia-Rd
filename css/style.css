@@ -291,12 +291,37 @@ iframe {
 }
 
 /**********************************************************************/
+/* styling for instagram feed
+/**********************************************************************/
+
+#ig-feed {
+	text-align: center;
+	overflow: hidden;
+}
+
+.ig-title {
+	margin-bottom: 20px;
+}
+
+#instafeed img { 
+	margin: 5px;
+	width: 15%;
+}
+
+@media (max-width: 768px) {
+	#instafeed img {
+		width: 19%;
+	}
+}
+
+/**********************************************************************/
 /* styling for footer
 /**********************************************************************/
 footer {
 	width: 100%;
 	background: var(--primary-color);
 	color: var(--text-dark);
+	border-top: 1px solid var(--text-light);
 }
 
 .footer-content {

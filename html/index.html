@@ -149,6 +149,20 @@
 
 		</section>
 
+		<!-- Instagram feed -->
+		<section id="ig-feed">
+			<div class="">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-xl-12 ig-title">
+						<h1>More of Us</h1>
+					</div>
+					<div class="col-sm-10 col-md-10" id="instafeed">
+						
+					</div>
+				</div>
+			</div>
+		</section>		
+
 		<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -200,5 +214,20 @@
 
 		<!-- our homemade scripts -->
 		<script src="../js/activate_about.js"></script>
+
+		<!-- Instagram feed JS -->
+		<script src="../js/instafeed.min.js"></script>
+
+		<script type="text/javascript">
+			var feed = new Instafeed({
+				get: 'user',
+				userId: '2324327916',
+				accessToken: '2324327916.1677ed0.4889cf0a7aea4307b78b839758198ebc',
+				limit: '12',
+				template: '<a href="{{link}}"><img src="{{image}}"/></a>'
+			});
+			feed.run();
+		</script>	<!-- End -->	
+
 	</body>
 </html>
