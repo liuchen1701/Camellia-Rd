@@ -264,6 +264,10 @@ header.masthead img {
 	.service-text {
 		text-align: left;
 	}
+
+	.service-card .col-md-4 {
+		text-align: right;
+	}
 }
 
 /**********************************************************************/
