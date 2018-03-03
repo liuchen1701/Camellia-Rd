@@ -5,6 +5,12 @@
 /* md: >=	768px
 /* lg: >=	992px
 /* xl: >=	1200px
+
+/**********************************************************************/
+/* google fonts
+/**********************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 /**********************************************************************/
 /* setting variables
 /**********************************************************************/
@@ -37,7 +43,7 @@ body, html {
 }
 
 h1 {
-	font-family: brix-sans-light;
+	font-family: 'brix-sans-light';
 	font-weight: bold;
 }
 
@@ -102,8 +108,12 @@ a.live-page {
   margin-right: 40px;
 }
 
-.nav-item2 {
-  margin-right: 215px;
+.nav-space {
+  margin-right: 225px;
+}
+
+.nav-space2 {
+  margin-right: 100px;
 }
 
 /**********************************************************************/
@@ -197,25 +207,28 @@ header.masthead img {
 /**********************************************************************/
 /* menu styling, and other pages
 /**********************************************************************/
-#menu, #press, #services, #merchandise {
+#menu, #press, #services, #merchandise, #careers { 
+	/* padding for all pages */
 	margin-top: 56px;
 	text-align: center;
 }
 
-.menu-items {
-	text-align: center;
-	font-weight: bold;
+.menu-item {
+	text-align: left;
 	color: var(--text-dark);
 }
 
-.menu-titles:hover {
+.menu-cat {
+	padding-top: 20px;
+}
+
+.menu-cat:hover {
 	background-color: var(--secondary-color);
 	cursor: pointer;
 }
 
 @media (min-width: 576px) {
-	.menu-items {
-		text-align: left;
+	.menu-cat .col-sm {
 		column-count: 2;
 	}
 }
@@ -236,7 +249,21 @@ header.masthead img {
 /* styling for services page
 /**********************************************************************/
 #dd-logo {
-	max-width: 240px;
+	max-width: 200px;
+}
+
+.service-card {
+	text-align: center;
+}
+
+.service-card div {
+	padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+	.service-text {
+		text-align: left;
+	}
 }
 
 /**********************************************************************/
@@ -247,12 +274,50 @@ header.masthead img {
 }
 
 /**********************************************************************/
+/* styling for forms
+/**********************************************************************/
+.forms {
+	margin-top: 30px;
+}
+
+iframe {
+	height: 700px;
+	max-width: 760px;
+	min-width: 90%;
+}
+
+/**********************************************************************/
+/* styling for instagram feed
+/**********************************************************************/
+
+#ig-feed {
+	text-align: center;
+	overflow: hidden;
+}
+
+.ig-title {
+	margin-bottom: 20px;
+}
+
+#instafeed img { 
+	margin: 5px;
+	width: 15%;
+}
+
+@media (max-width: 768px) {
+	#instafeed img {
+		width: 19%;
+	}
+}
+
+/**********************************************************************/
 /* styling for footer
 /**********************************************************************/
 footer {
 	width: 100%;
 	background: var(--primary-color);
 	color: var(--text-dark);
+	border-top: 1px solid var(--text-light);
 }
 
 .footer-content {
