@@ -207,7 +207,7 @@ header.masthead img {
 /**********************************************************************/
 /* menu styling, and other pages
 /**********************************************************************/
-#menu, #press, #services, #merchandise, #careers { 
+#menu, #press, #services, #merchandise, #careers, #submenu { 
 	/* padding for all pages */
 	margin-top: 56px;
 	text-align: center;
@@ -232,6 +232,34 @@ header.masthead img {
 		column-count: 2;
 	}
 }
+
+/**********************************************************************/
+/* styling for submenu page
+/**********************************************************************/
+
+#submenu img {  /* TODO: make this responsive and look better */
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-selector {
+	margin-top: 20px;
+}
+
+.table-entry {
+	color: var(--text-dark);
+}
+
+.table-entry:hover {
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}
+
+.table-entry.active {
+	background-color: var(--highlight-color);
+	color: white;
+}
+
 
 /**********************************************************************/
 /* styling for press page
