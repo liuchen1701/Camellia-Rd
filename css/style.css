@@ -238,8 +238,12 @@ header.masthead img {
 /**********************************************************************/
 
 #submenu img {  /* TODO: make this responsive and look better */
-	width: 100%;
+	width: 90%;
 	height: 100%;
+}
+
+.menu-slide {
+	margin-top: 20px;
 }
 
 .gallery-selector {
@@ -248,6 +252,8 @@ header.masthead img {
 
 .table-entry {
 	color: var(--text-dark);
+	height: 30px;
+	padding-top: 2px;
 }
 
 .table-entry:hover {
@@ -258,6 +264,18 @@ header.masthead img {
 .table-entry.active {
 	background-color: var(--highlight-color);
 	color: white;
+	cursor: default;
+}
+
+.item-description {
+	padding-top: 15px;
+	text-align: left;
+}
+
+@media(min-width: 768px) {
+	.gallery-selector {
+		margin-top: 0px;
+	}
 }
 
 
