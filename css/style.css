@@ -244,6 +244,7 @@ header.masthead img {
 
 .menu-slide {
 	margin-top: 20px;
+	display: none;
 }
 
 .gallery-selector {
@@ -272,9 +273,40 @@ header.masthead img {
 	text-align: left;
 }
 
+/* default (mobile) doesn't show */
+.gallery-slider {
+	display: none;
+}
+
+.thumbnail {
+	float: left;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.active, .thumbnail:hover {
+	opacity: 1;
+}
+
 @media(min-width: 768px) {
 	.gallery-selector {
 		margin-top: 0px;
+	}
+	
+	.gallery-slider {
+		margin-top: 25px;
+		margin-left: 5%;
+		min-height: 50px;
+		max-width: 50%;
+		display: flex;
+		overflow-y: scroll;
+		padding: 2px;
+	}
+	
+	.gallery-slider .row:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 }
 
