@@ -192,7 +192,7 @@ header.masthead img {
 	width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	/* text is on the left, images on the right */
 	div.info-primary {
 		text-align: left;
@@ -237,8 +237,8 @@ header.masthead img {
 /* styling for submenu page
 /**********************************************************************/
 
-#submenu img {  /* TODO: make this responsive and look better */
-	width: 90%;
+#submenu .menu-slide img {  /* TODO: make this responsive and look better */
+	width: 100%;
 	height: 100%;
 }
 
@@ -279,7 +279,7 @@ header.masthead img {
 }
 
 .thumbnail {
-	float: left;
+	display: inline-block;
 	opacity: 0.6;
 	cursor: pointer;
 }
@@ -294,19 +294,31 @@ header.masthead img {
 	}
 	
 	.gallery-slider {
-		margin-top: 25px;
-		margin-left: 5%;
-		min-height: 50px;
-		max-width: 50%;
-		display: flex;
+		margin-top: 20px;
+		margin-left: 15px;
+		max-width: 24.5em;
+		padding: 0px;
 		overflow-y: scroll;
-		padding: 2px;
+		display: inline-flex;
 	}
 	
-	.gallery-slider .row:after {
-		content: "";
-		display: table;
-		clear: both;
+	.gallery-slider img {
+		width: 100%;
+		min-width: 120px;
+	}
+	
+}
+
+/* make this less gross and hard-coded lol */
+@media(min-width: 992px) {
+	.gallery-slider {
+		max-width: 33.2em;
+	}
+}
+
+@media(min-width: 1200px) {
+	.gallery-slider {
+		max-width: 39.75em;
 	}
 }
 
