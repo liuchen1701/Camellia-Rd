@@ -192,6 +192,7 @@ header.masthead img {
 	width: 100%;
 }
 
+
 @media (min-width: 992px) {
 	/* text is on the left, images on the right */
 	div.info-primary {
@@ -218,6 +219,15 @@ header.masthead img {
 	color: var(--text-dark);
 }
 
+#menu-container a {
+	text-decoration: none;
+	color: var(--text-dark);
+}
+
+#menu-container a:hover{
+	text-decoration: none;
+}
+
 .menu-cat {
 	border: 1px solid var(--primary-color);
 	padding-top: 20px;
@@ -240,7 +250,6 @@ header.masthead img {
 /**********************************************************************/
 #submenu .menu-slide img {  /* TODO: make this responsive and look better */
 	width: 100%;
-	height: 100%;
 }
 
 .menu-slide {
@@ -250,6 +259,7 @@ header.masthead img {
 
 .gallery-selector {
 	margin-top: 20px;
+	justify-content: center;
 }
 
 .table-entry {
@@ -267,6 +277,10 @@ header.masthead img {
 	background-color: var(--highlight-color);
 	color: white;
 	cursor: default;
+}
+
+.item-photo {
+/*	height: 400px;*/
 }
 
 .item-description {
@@ -292,10 +306,11 @@ header.masthead img {
 @media(min-width: 768px) {
 	.gallery-selector {
 		margin-top: 0px;
+		justify-content: flex-start;
 	}
 	
 	.gallery-slider {
-		margin-top: 20px;
+		margin-top: 40px;
 		margin-left: 15px;
 		max-width: 24.5em;
 		padding: 0px;
@@ -316,6 +331,10 @@ header.masthead img {
 @media(min-width: 992px) {
 	.gallery-slider {
 		max-width: 33.2em;
+	}
+	
+	.thumbnail {
+		height: 100px;
 	}
 }
 
