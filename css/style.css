@@ -304,10 +304,12 @@ header.masthead img {
 	}
 	
 	.gallery-slider img {
-		width: 100%;
-		min-width: 120px;
+		height: 100%;
 	}
 	
+	.thumbnail {
+		height: 75px;
+	}
 }
 
 /* make this less gross and hard-coded lol */
