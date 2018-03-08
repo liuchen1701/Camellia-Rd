@@ -108,6 +108,11 @@ a.live-page {
 .navbar {
   background: var(--primary-color);
   box-shadow: 0px 5px 30px #505151;
+  padding: 15px 0;
+}
+
+#logo img {
+	margin-top: 12px;
 }
 
 .nav-item a {
@@ -358,6 +363,10 @@ header.masthead img {
 /**********************************************************************/
 /* styling for press page
 /**********************************************************************/
+#press {
+	height: 100vh;
+}
+
 .press-logo {
 /*	margin: 30px 0 30px 0;*/
 	padding: 30px;
@@ -370,6 +379,10 @@ header.masthead img {
 /**********************************************************************/
 /* styling for services page
 /**********************************************************************/
+#services {
+	height: 100vh;
+}
+
 #dd-logo {
 	max-width: 200px;
 }
@@ -395,6 +408,10 @@ header.masthead img {
 /**********************************************************************/
 /* styling for merchandise page
 /**********************************************************************/
+#merchandise {
+	height: 100vh;
+}
+
 #gift-card {
 	max-width: 360px;
 }
