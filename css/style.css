@@ -202,7 +202,8 @@ header.masthead img {
 	width: 100%;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 992px) {
 	/* text is on the left, images on the right */
 	div.info-primary {
 		text-align: left;
@@ -217,7 +218,7 @@ header.masthead img {
 /**********************************************************************/
 /* menu styling, and other pages
 /**********************************************************************/
-#menu, #press, #services, #merchandise, #careers {
+#menu, #press, #services, #merchandise, #careers, #submenu {
 	/* padding for all pages */
 	margin-top: 56px;
 	text-align: center;
@@ -228,12 +229,23 @@ header.masthead img {
 	color: var(--text-dark);
 }
 
+#menu-container a {
+	text-decoration: none;
+	color: var(--text-dark);
+}
+
+#menu-container a:hover{
+	text-decoration: none;
+}
+
 .menu-cat {
+	border: 1px solid var(--primary-color);
 	padding-top: 20px;
 }
 
 .menu-cat:hover {
-	background-color: var(--secondary-color);
+/*	background-color: var(--secondary-color); */
+	border: 1px solid var(--secondary-color);
 	cursor: pointer;
 }
 
@@ -242,6 +254,106 @@ header.masthead img {
 		column-count: 2;
 	}
 }
+
+/**********************************************************************/
+/* styling for submenu page
+/**********************************************************************/
+#submenu .menu-slide img {  /* TODO: make this responsive and look better */
+	width: 100%;
+}
+
+.menu-slide {
+	margin-top: 20px;
+	display: none;
+}
+
+.gallery-selector {
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.table-entry {
+	color: var(--text-dark);
+	height: 30px;
+	padding-top: 2px;
+}
+
+.table-entry:hover {
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}
+
+.table-entry.active {
+	background-color: var(--highlight-color);
+	color: white;
+	cursor: default;
+}
+
+.item-photo {
+/*	height: 400px;*/
+}
+
+.item-description {
+	padding-top: 15px;
+	text-align: left;
+}
+
+/* default (mobile) doesn't show */
+.gallery-slider {
+	display: none;
+}
+
+.thumbnail {
+	display: inline-block;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.active, .thumbnail:hover {
+	opacity: 1;
+}
+
+@media(min-width: 768px) {
+	.gallery-selector {
+		margin-top: 0px;
+		justify-content: flex-start;
+	}
+
+	.gallery-slider {
+		margin-top: 40px;
+		margin-left: 15px;
+		max-width: 24.5em;
+		padding: 0px;
+		overflow-y: scroll;
+		display: inline-flex;
+	}
+
+	.gallery-slider img {
+		height: 100%;
+	}
+
+	.thumbnail {
+		height: 75px;
+	}
+}
+
+/* make this less gross and hard-coded lol */
+@media(min-width: 992px) {
+	.gallery-slider {
+		max-width: 33.2em;
+	}
+
+	.thumbnail {
+		height: 100px;
+	}
+}
+
+@media(min-width: 1200px) {
+	.gallery-slider {
+		max-width: 39.75em;
+	}
+}
+
 
 /**********************************************************************/
 /* styling for press page
@@ -273,6 +385,10 @@ header.masthead img {
 @media (min-width: 768px) {
 	.service-text {
 		text-align: left;
+	}
+
+	.service-card .col-md-4 {
+		text-align: right;
 	}
 }
 
