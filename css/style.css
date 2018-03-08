@@ -9,8 +9,9 @@
 /**********************************************************************/
 /* google fonts
 /**********************************************************************/
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Source+Sans+Pro');
 /**********************************************************************/
 /* setting variables
 /**********************************************************************/
@@ -43,9 +44,18 @@ body, html {
 }
 
 h1 {
-	font-family: 'brix-sans-light';
+font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 }
+h2 {
+font-family: 'Roboto', sans-serif;
+
+}
+p {
+font-family: 'Roboto', sans-serif;
+}
+
+
 
 section {
 	padding: 50px 0;
@@ -207,7 +217,7 @@ header.masthead img {
 /**********************************************************************/
 /* menu styling, and other pages
 /**********************************************************************/
-#menu, #press, #services, #merchandise, #careers { 
+#menu, #press, #services, #merchandise, #careers {
 	/* padding for all pages */
 	margin-top: 56px;
 	text-align: center;
@@ -299,7 +309,7 @@ iframe {
 	margin-bottom: 20px;
 }
 
-#instafeed img { 
+#instafeed img {
 	margin: 5px;
 	width: 15%;
 }
