@@ -57,12 +57,6 @@ p {
 font-family: 'Roboto', sans-serif;
 }
 
-
-
-section {
-	padding: 50px 0;
-}
-
 /* figure out a better system than important */
 a.live-page {
 	font-weight: bold !important;
@@ -109,6 +103,7 @@ a.live-page {
 /**********************************************************************/
 .navbar {
   background: var(--primary-color);
+	opacity: .95;
   box-shadow: 0px 5px 30px #505151;
   padding: 15px 0;
 	position: fixed;
