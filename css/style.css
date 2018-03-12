@@ -46,7 +46,9 @@ body, html {
 h1 {
 font-family: 'Roboto', sans-serif;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
+
 h2 {
 font-family: 'Roboto', sans-serif;
 
@@ -147,7 +149,7 @@ a.nav-expander:hover {
 	}
 	
 	.navbar > a.nav-item.nav-link {
-		padding: 15px;
+		padding: 15px 30px;
 		display: inline;
 	}
 }
@@ -478,9 +480,21 @@ header.masthead img {
 	height: 100vh;
 }
 
+@media (min-width: 992px) {
+	.merch-text {
+	text-align: left;
+}
+
+}
+
+.gift-card-gallery {
+	max-width: 360px;
+}
+/*
 #gift-card {
 	max-width: 360px;
 }
+*/
 
 /**********************************************************************/
 /* styling for forms
