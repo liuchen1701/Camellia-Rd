@@ -13,10 +13,14 @@ function about() {
 
     if(about_height <= current_height + nav_height) {
         var about_button = document.getElementsByClassName("button-to-about")[0];
+        var about_button_r = document.getElementsByClassName("button-to-about-row")[0];
         about_button.classList.add("live-page");
+        about_button_r.classList.add("live-page");
     } else {
         var about_button = document.getElementsByClassName("button-to-about")[0];
+        var about_button_r = document.getElementsByClassName("button-to-about-row")[0];
         about_button.classList.remove("live-page");
+        about_button_r.classList.remove("live-page");
     }
 }
 
