@@ -291,6 +291,7 @@ header.masthead img {
 /**********************************************************************/
 #menu, #press, #services, #merchandise, #careers, #submenu {
 	/* padding for all pages */
+	padding-top: 128px;
 	text-align: center;
 }
 
