@@ -113,12 +113,17 @@ a.live-page {
 	z-index: 1;
 }
 
-.navbar-row {
-	display: none;
-}
-
 .nav-item.nav-link {
 	color: var(--text-dark);
+	font-size: 18px;
+}
+
+.nav-item.nav-link:hover {
+	color: var(--text-light);
+}
+
+.navbar > .nav-item.nav-link{
+	display: none;
 }
 
 a.nav-expander {
@@ -141,13 +146,9 @@ a.nav-expander:hover {
 		display: none;
 	}
 	
-	.navbar-row {
-		width: 74%;
-		font-size: 16px
-	}
-	
-	pt-2 {
-		display: none;
+	.navbar > a.nav-item.nav-link {
+		padding: 15px;
+		display: inline;
 	}
 }
 
@@ -188,7 +189,6 @@ body.nav-expanded {
 
 .nav-menu li {
 	margin: 0 10px;
-	font-size: 16px;
 	padding: 4px;
 }
 
@@ -291,7 +291,6 @@ header.masthead img {
 /**********************************************************************/
 #menu, #press, #services, #merchandise, #careers, #submenu {
 	/* padding for all pages */
-	margin-top: 56px;
 	text-align: center;
 }
 
