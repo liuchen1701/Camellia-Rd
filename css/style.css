@@ -63,7 +63,7 @@ section {
 
 /* figure out a better system than important */
 a.live-page {
-	font-weight: bold;
+	font-weight: bold !important;
 	color: var(--highlight-color) !important;
 }
 
@@ -111,10 +111,15 @@ a.live-page {
   padding: 15px 0;
 }
 
-#logo img {
-	margin-top: 12px;
+.navbar-nav {
+	text-align: right;
 }
 
+.nav-item.nav-link {
+	color: var(--text-dark);
+}
+
+/*
 .nav-item a {
 	color: var(--text-dark);
 }
@@ -129,6 +134,12 @@ a.live-page {
 
 .nav-space2 {
   margin-right: 100px;
+}
+*/
+@media (min-width: 992px) {
+	.navbar-nav {
+		text-align: left;
+	}
 }
 
 /**********************************************************************/

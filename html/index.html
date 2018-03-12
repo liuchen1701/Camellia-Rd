@@ -24,38 +24,36 @@
 	<body id="page-top">
 
     <!-- Navigation --> <!-- todo: fix navbar menu -->
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" id="logo" href="#page-top">
-					<img src="../img/logo-transparent.png" width="159.5" height="48.3">
-				</a> <!-- 2074x628 -->
-        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger button-to-about" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item nav-space">
-              <a class="nav-link js-scroll-trigger" href="press.html">Press</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="merchandise.html">Merchandise</a>
-						</li>
-						<li class="nav-item nav-space2">
-              <a class="nav-link js-scroll-trigger" href="careers.html">Careers</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<!--		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">-->
+		<nav>
+<!--
+			<button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#camelNav" aria-controls="camelNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+-->
+			
+			
+			<div class="collapse navbar-collapse justify-content-lg-start justify-content-end" id="camelNav">
+				<div class="navbar-nav pr-4">
+					<a class="nav-item nav-link button-to-about" href="#about">About</a>
+					<a class="nav-item nav-link" href="menu.html">Menu</a>
+					<a class="nav-item nav-link" href="press.html">Press</a>
+					<a class="nav-item nav-link" href="services.html">Catering</a>
+					<a class="nav-item nav-link" href="merchandise.html">Merchandise</a>
+					<a class="nav-item nav-link" href="careers.html">Jobs</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="navbar navbar-inverse navbar-fixed-top" id="">
+			<a class="navbar-brand pl-4" href="#page-top">
+				<img src="../img/logo-transparent.png" width ="159.5" height="48.3">
+			</a>	<!-- 2074 x 628 -->
+			
+			<button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#camelNav" aria-controls="camelNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
 
 		<!-- Landing Screen -->
     <header class="masthead" id="landing-about">
@@ -216,6 +214,7 @@
 
 		<!-- our homemade scripts -->
 		<script src="../js/activate_about.js"></script>
+		<script src="../js/navbar_slide.js"></script>
 
 		<!-- Instagram feed JS -->
 		<script src="../js/instafeed.min.js"></script>
@@ -229,7 +228,8 @@
 				template: '<a href="{{link}}"><img src="{{image}}"/></a>'
 			});
 			feed.run();
-		</script>	<!-- End -->	
+		</script>
+		<!-- End -->	
 
 	</body>
 </html>
