@@ -537,7 +537,6 @@ iframe {
 /* styling for footer
 /**********************************************************************/
 footer {
-	width: 100%;
 	background: var(--primary-color);
 	color: var(--text-dark);
 	border-top: 1px solid var(--text-light);
