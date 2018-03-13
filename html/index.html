@@ -24,38 +24,58 @@
 	<body id="page-top">
 
     <!-- Navigation --> <!-- todo: fix navbar menu -->
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" id="logo" href="#page-top">
-					<img src="../img/logo-transparent.png" width="159.5" height="48.3">
-				</a> <!-- 2074x628 -->
-        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger button-to-about" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item nav-space">
-              <a class="nav-link js-scroll-trigger" href="press.html">Press</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="merchandise.html">Merchandise</a>
-						</li>
-						<li class="nav-item nav-space2">
-              <a class="nav-link js-scroll-trigger" href="careers.html">Careers</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<nav class="pt-2">
+			<ul class="list-unstyled nav-menu">
+				<li class="text-right pt-3"><a class="mr-4" href="#" id="nav-close"><i class="fa fa-times"></i></a></li>
+				<li><a class="nav-item nav-link button-to-about mr-4" href="#about">About</a></li>
+				<li><a class="nav-item nav-link mr-4" href="menu.html">Menu</a></li>
+				<li><a class="nav-item nav-link mr-4" href="services.html">Catering</a></li>
+				<li><a class="nav-item nav-link mr-4" href="press.html">Press</a></li>
+				<li><a class="nav-item nav-link mr-4" href="merchandise.html">Merchandise</a></li>
+				<li><a class="nav-item nav-link mr-4" href="careers.html">Jobs</a></li>
+			</ul>
+		</nav>
+
+		<div class="container-fluid navbar justify-content-lg-center fixed-top">
+			<a class="navbar-brand ml-4 order-4" href="#page-top">
+				<img src="../img/logo-transparent.png" width ="159.5" height="48.3">
+			</a>	<!-- 2074 x 628 -->
+
+			<a class="nav-item nav-link button-to-about-row order-1" href="#about">About</a>
+			<a class="nav-item nav-link order-2" href="menu.html">Menu</a>
+			<a class="nav-item nav-link order-3" href="services.html">Catering</a>
+			<a class="nav-item nav-link order-5" href="press.html">Press</a>
+			<a class="nav-item nav-link order-6" href="merchandise.html">Merchandise</a>
+			<a class="nav-item nav-link order-7" href="careers.html">Jobs</a>
+
+			<div class="navbar-header pull-right mr-4 order-8">
+				<a id="nav-expander" class="nav-expander">
+					<i class="fa fa-bars fa-lg white"></i>
+				</a>
+			</div>
+		</div>
+<!-- todo: get rid of this and copy above code to all other places if is good
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+			<a class="navbar-brand pl-4" href="#page-top">
+				<img src="../img/logo-transparent.png" width ="159.5" height="48.3">
+			</a>	 2074 x 628
+
+			<button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#camelNav" aria-controls="camelNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-lg-start justify-content-end" id="camelNav">
+				<div class="navbar-nav pr-4">
+					<a class="nav-item nav-link button-to-about" href="#about">About</a>
+					<a class="nav-item nav-link" href="menu.html">Menu</a>
+					<a class="nav-item nav-link" href="press.html">Press</a>
+					<a class="nav-item nav-link" href="services.html">Catering</a>
+					<a class="nav-item nav-link" href="merchandise.html">Merchandise</a>
+					<a class="nav-item nav-link" href="careers.html">Jobs</a>
+				</div>
+			</div>
+		</nav>
+-->
 
 		<!-- Landing Screen -->
     <header class="masthead" id="landing-about">
@@ -104,11 +124,13 @@
 					</div>
 
 				</div>
+				<br><br>
+				<hr>
 			</div>
 		</section>
 
 		<!-- About Ingredients -->
-		<section class="bg-secondary">
+		<section class="bg-primary">
 			<div class="container">
 				<div class ="row">
 					<div class="col-sm-12 col-lg-5 align-self-center order-lg-last info-secondary">
@@ -147,6 +169,9 @@
 
 
 				</div>
+
+				<br><br>
+				<hr>
 			</div>
 
 		</section>
@@ -216,6 +241,21 @@
 
 		<!-- our homemade scripts -->
 		<script src="../js/activate_about.js"></script>
+		<script>
+			$(document).ready(function () {
+				//Navigation menu slider
+				$('#nav-expander').on('click', function (e) {
+					e.preventDefault();
+					$('body').toggleClass('nav-expanded');
+					console.log("hi");
+				});
+				$('#nav-close').on('click', function (e) {
+					e.preventDefault();
+					$('body').removeClass('nav-expanded');
+					console.log("bye");
+				});
+			});
+		</script>
 
 		<!-- Instagram feed JS -->
 		<script src="../js/instafeed.min.js"></script>
@@ -229,7 +269,8 @@
 				template: '<a href="{{link}}"><img src="{{image}}"/></a>'
 			});
 			feed.run();
-		</script>	<!-- End -->
+		</script>
+		<!-- End -->
 
 	</body>
 </html>

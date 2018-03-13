@@ -46,7 +46,9 @@ body, html {
 h1 {
 font-family: 'Roboto', sans-serif;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
+
 h2 {
 font-family: 'Roboto', sans-serif;
 
@@ -55,15 +57,9 @@ p {
 font-family: 'Roboto', sans-serif;
 }
 
-
-
-section {
-	padding: 50px 0;
-}
-
 /* figure out a better system than important */
 a.live-page {
-	font-weight: bold;
+	font-weight: bold !important;
 	color: var(--highlight-color) !important;
 }
 
@@ -107,24 +103,96 @@ a.live-page {
 /**********************************************************************/
 .navbar {
   background: var(--primary-color);
+	opacity: .95;
   box-shadow: 0px 5px 30px #505151;
+  padding: 15px 0;
+	position: fixed;
+	z-index: 1;
 }
 
-.nav-item a {
+.nav-item.nav-link {
+	color: var(--text-dark);
+	font-size: 18px;
+}
+
+.nav-item.nav-link:hover {
+	color: var(--text-light);
+}
+
+.navbar > .nav-item.nav-link{
+	display: none;
+}
+
+a.nav-expander {
+	background: none repeat scroll 0 0;
+	padding: 6px 10px;
+	font-size: 24px;
+	z-index: 12;
+}
+
+a.nav-expander i {
 	color: var(--text-dark);
 }
 
-.nav-item {
-  margin-right: 40px;
+a.nav-expander:hover {
+	cursor: pointer;
 }
 
-.nav-space {
-  margin-right: 225px;
+@media (min-width: 992px) {
+	.navbar-header.pull-right {
+		display: none;
+	}
+	
+	.navbar > a.nav-item.nav-link {
+		padding: 15px 30px;
+		display: inline;
+	}
 }
 
-.nav-space2 {
-  margin-right: 100px;
+nav {
+	background: var(--primary-color);
+	text-align: right;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	right: -75%;
+	width: 75%;
+	max-width: 300px;
+	font-size: 15px;
+	top: 0;
+	z-index: 2000;
+	
+	transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: right 0.3s ease-in-out 0s;
+	-moz-transition: right 0.3s ease-in-out 0s;
+	-o-transition: right 0.3s ease-in-out 0s;
 }
+
+.nav-expanded nav {
+	right: 0;
+}
+
+body.nav-expanded {
+	transition: right 0.4s ease-in-out 0s;
+	-webkit-transition: right 0.4s ease-in-out 0s;
+	-moz-transition: right 0.4s ease-in-out 0s;
+	-o-transition: right 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+	font-size: 24px;
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.nav-menu li {
+	margin: 0 10px;
+	padding: 4px;
+}
+
+.nav-menu li a {
+	border-bottom: 1px solid var(--text-light);
+}
+
 
 /**********************************************************************/
 /* styling for the masthead (landing pictures)
@@ -220,7 +288,7 @@ header.masthead img {
 /**********************************************************************/
 #menu, #press, #services, #merchandise, #careers, #submenu {
 	/* padding for all pages */
-	margin-top: 56px;
+	padding-top: 128px;
 	text-align: center;
 }
 
@@ -358,6 +426,10 @@ header.masthead img {
 /**********************************************************************/
 /* styling for press page
 /**********************************************************************/
+#press {
+	min-height: 100%;
+}
+
 .press-logo {
 /*	margin: 30px 0 30px 0;*/
 	padding: 30px;
@@ -370,6 +442,10 @@ header.masthead img {
 /**********************************************************************/
 /* styling for services page
 /**********************************************************************/
+#services {
+	min-height: 100%;
+}
+
 #dd-logo {
 	max-width: 200px;
 }
@@ -395,8 +471,20 @@ header.masthead img {
 /**********************************************************************/
 /* styling for merchandise page
 /**********************************************************************/
-#gift-card {
+#merchandise {
+	min-height: 100%;
+}
+
+@media (min-width: 768px) {
+	.merch-text {
+		text-align: left;
+	}
+
+}
+
+.gift-card-gallery {
 	max-width: 360px;
+/*	width: 480px;*/
 }
 
 /**********************************************************************/
@@ -440,7 +528,6 @@ iframe {
 /* styling for footer
 /**********************************************************************/
 footer {
-	width: 100%;
 	background: var(--primary-color);
 	color: var(--text-dark);
 	border-top: 1px solid var(--text-light);

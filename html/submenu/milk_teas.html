@@ -24,38 +24,36 @@
 
 	<body id="page-top">
 		<!-- Navigation --> <!-- todo: fix navbar menu -->
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" id="logo" href="/html/index.html#page-top">
-					<img src="/img/logo.jpg" width="159.5" height="48.3">
-				</a> <!-- 2074x628 -->
-        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger live-page" href="../menu.html">Menu</a>
-            </li>
-            <li class="nav-item nav-space">
-              <a class="nav-link js-scroll-trigger" href="../press.html">Press</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../merchandise.html">Merchandise</a>
-						</li>
-						<li class="nav-item nav-space2">
-              <a class="nav-link js-scroll-trigger" href="../careers.html">Careers</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav class="pt-2">
+			<ul class="list-unstyled nav-menu">
+				<li class="text-right pt-3"><a class="mr-4" href="#" id="nav-close"><i class="fa fa-times"></i></a></li>
+				<li><a class="nav-item nav-link mr-4" href="../index.html#about">About</a></li>
+				<li><a class="nav-item nav-link mr-4 live-page" href="../menu.html">Menu</a></li>
+				<li><a class="nav-item nav-link mr-4" href="../services.html">Catering</a></li>
+				<li><a class="nav-item nav-link mr-4" href="../press.html">Press</a></li>
+				<li><a class="nav-item nav-link mr-4" href="../merchandise.html">Merchandise</a></li>
+				<li><a class="nav-item nav-link mr-4" href="../careers.html">Jobs</a></li>
+			</ul>
+		</nav>
+
+		<div class="container-fluid navbar justify-content-lg-center">
+			<a class="navbar-brand ml-4 order-4" href="../index.html">
+				<img src="../../img/logo-transparent.png" width ="159.5" height="48.3">
+			</a>	<!-- 2074 x 628 -->
+
+			<a class="nav-item nav-link button-to-about-row order-1" href="../index.html#about">About</a>
+			<a class="nav-item nav-link order-2 live-page" href="../menu.html">Menu</a>
+			<a class="nav-item nav-link order-3" href="../services.html">Catering</a>
+			<a class="nav-item nav-link order-5" href="../press.html">Press</a>
+			<a class="nav-item nav-link order-6" href="../merchandise.html">Merchandise</a>
+			<a class="nav-item nav-link order-7" href="../careers.html">Jobs</a>
+
+			<div class="navbar-header pull-right mr-4 order-8">
+				<a id="nav-expander" class="nav-expander">
+					<i class="fa fa-bars fa-lg white"></i>
+				</a>
+			</div>
+		</div>
 
 		<section id="submenu">
 			<div class="container">
@@ -603,7 +601,23 @@
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 		<!-- our homemade js files -->
-		<script src="../../js/gallery_page.js"></script>
+		<script src="/js/gallery_page.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				//Navigation menu slider
+				$('#nav-expander').on('click', function (e) {
+					e.preventDefault();
+					$('body').toggleClass('nav-expanded');
+					console.log("hi");
+				});
+				$('#nav-close').on('click', function (e) {
+					e.preventDefault();
+					$('body').removeClass('nav-expanded');
+					console.log("bye");
+				});
+			});
+		</script>
 
 	</body>
 </html>
