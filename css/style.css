@@ -427,7 +427,7 @@ header.masthead img {
 /* styling for press page
 /**********************************************************************/
 #press {
-	height: 100vh;
+	min-height: 100%;
 }
 
 .press-logo {
@@ -443,7 +443,7 @@ header.masthead img {
 /* styling for services page
 /**********************************************************************/
 #services {
-	height: 100vh;
+	min-height: 100%;
 }
 
 #dd-logo {
@@ -472,7 +472,7 @@ header.masthead img {
 /* styling for merchandise page
 /**********************************************************************/
 #merchandise {
-	height: 100vh;
+	min-height: 100%;
 }
 
 @media (min-width: 768px) {
