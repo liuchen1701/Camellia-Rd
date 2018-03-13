@@ -270,7 +270,7 @@ header.masthead img {
 	width: 100%;
 }
 
-#page-top section{
+#page-top section {
 	margin: 50px 0;
 }
 
@@ -558,6 +558,10 @@ footer {
 
 .fa-map-marker:hover {
 	cursor: pointer;
+}
+
+.social-media a {
+	text-decoration: none;
 }
 
 .social-media-icon {
