@@ -329,6 +329,10 @@ header.masthead img {
 /**********************************************************************/
 /* styling for submenu page
 /**********************************************************************/
+#submenu {
+	margin-bottom: 50px;
+}
+
 #submenu .menu-slide img {  /* TODO: make this responsive and look better */
 	width: 100%;
 }
