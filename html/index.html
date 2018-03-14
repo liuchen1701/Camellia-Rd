@@ -207,11 +207,17 @@
 			<div class="container">
 				<div class="row align-items-center justify-content-center">
 					<div class=" col-sm-12 col-md-6 col-lg footer-content">
-						<i class="fa fa-map-marker"></i>
-						<p>8199 Clairemont Mesa Blvd.<br>
-							 Ste H<br>
-							 San Diego CA 92111
-						</p>
+						<div class="popup-container">
+							<span class="close" id="close-btn">&times;</span>
+							<div id="map" style="width:200px; height:200px"></div>
+						</div>
+						<div id="address-content">
+							<i class="fa fa-map-marker" id="markerBtn"></i>
+							<p>8199 Clairemont Mesa Blvd.<br>
+								 Ste H<br>
+							 	 San Diego CA 92111
+							</p>
+						</div>
 					</div>
 					<div class=" col-sm-12 col-md-6 col-lg-5 footer-content">
 						<p>Store Hours:<br>
@@ -253,6 +259,7 @@
 
 		<!-- our homemade scripts -->
 		<script src="../js/activate_about.js"></script>
+		<script src="../js/google_maps.js"></script>
 		<script>
 			$(document).ready(function () {
 				//Navigation menu slider
@@ -283,6 +290,30 @@
 			feed.run();
 		</script>
 		<!-- End -->
+
+		<!-- Google Maps API Javascript -->
+		<script>
+			function camelliaRdMap() {
+				var myLatLng = {lat: 32.8322576, lng: -117.1478123};
+	
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 12, 
+					center: myLatLng,
+					mapTypeId: google.maps.MapTypeId.SATTELITE 
+				});
+					
+				var marker = new google.maps.Marker({
+					position: myLatLng,
+					map: map,
+					url: 'https://www.google.com/maps/place/Camellia+Rd+Tea+Bar/@32.8322576,-117.1478123,18z/data=!4m5!3m4!1s0x80dbffbd27f98beb:0xcb20159c15170e9d!8m2!3d32.832207!4d-117.1468614'
+				});
+	
+				marker.addListener('click', function() {
+					window.location.href = this.url;
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=camelliaRdMap"></script>
 
 	</body>
 </html>
