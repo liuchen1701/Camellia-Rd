@@ -36,6 +36,10 @@
 			</ul>
 		</nav>
 
+    <div id="cover">
+
+    </div>
+
 		<div class="container-fluid navbar justify-content-lg-center fixed-top">
 			<a class="navbar-brand ml-4 order-4" href="#page-top">
 				<img src="../img/logo-transparent.png" width ="159.5" height="48.3">
@@ -266,11 +270,13 @@
 				$('#nav-expander').on('click', function (e) {
 					e.preventDefault();
 					$('body').toggleClass('nav-expanded');
+          $('#cover').toggleClass('show');
 					console.log("hi");
 				});
 				$('#nav-close').on('click', function (e) {
 					e.preventDefault();
 					$('body').removeClass('nav-expanded');
+          $('#cover').removeClass('show');
 					console.log("bye");
 				});
 			});
@@ -295,19 +301,19 @@
 		<script>
 			function camelliaRdMap() {
 				var myLatLng = {lat: 32.8322576, lng: -117.1478123};
-	
+
 				var map = new google.maps.Map(document.getElementById("map"), {
-					zoom: 12, 
+					zoom: 12,
 					center: myLatLng,
-					mapTypeId: google.maps.MapTypeId.SATTELITE 
+					mapTypeId: google.maps.MapTypeId.SATTELITE
 				});
-					
+
 				var marker = new google.maps.Marker({
 					position: myLatLng,
 					map: map,
 					url: 'https://www.google.com/maps/place/Camellia+Rd+Tea+Bar/@32.8322576,-117.1478123,18z/data=!4m5!3m4!1s0x80dbffbd27f98beb:0xcb20159c15170e9d!8m2!3d32.832207!4d-117.1468614'
 				});
-	
+
 				marker.addListener('click', function() {
 					window.location.href = this.url;
 				});
