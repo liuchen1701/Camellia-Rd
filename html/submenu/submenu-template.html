@@ -16,7 +16,7 @@
 
 		<!-- Our CSS Sheet -->
 		<link href="../../css/style.css" rel="stylesheet">
-		
+
 		<!-- tab icon -->
 		<link rel="shortcut icon" href="../../img/favicon.png">
 
@@ -35,26 +35,30 @@
 				<li><a class="nav-item nav-link mr-4" href="../careers.html">Jobs</a></li>
 			</ul>
 		</nav>
-		
+
+    <div id="cover">
+
+    </div>
+
 		<div class="container-fluid navbar justify-content-lg-center">
 			<a class="navbar-brand ml-4 order-4" href="../index.html">
 				<img src="../../img/logo-transparent.png" width ="159.5" height="48.3">
 			</a>	<!-- 2074 x 628 -->
-			
+
 			<a class="nav-item nav-link button-to-about-row order-1" href="../index.html#about">About</a>
 			<a class="nav-item nav-link order-2 live-page" href="../menu.html">Menu</a>
 			<a class="nav-item nav-link order-3" href="../services.html">Catering</a>
 			<a class="nav-item nav-link order-5" href="../press.html">Press</a>
 			<a class="nav-item nav-link order-6" href="../merchandise.html">Merchandise</a>
 			<a class="nav-item nav-link order-7" href="../careers.html">Jobs</a>
-			
+
 			<div class="navbar-header pull-right mr-4 order-8">
 				<a id="nav-expander" class="nav-expander">
 					<i class="fa fa-bars fa-lg white"></i>
 				</a>
 			</div>
 		</div>
-	
+
 		<section id="submenu">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -85,7 +89,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="row menu-slide">
 							<div class="col-md-7 col-sm-12 item-photo">
 								<img src="/img/default-photos/IMG_3686.JPG">
@@ -111,7 +115,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="row menu-slide">
 							<div class="col-md-7 col-sm-12 item-photo">
 								<img src="/img/default-photos/IMG_3687.JPG">
@@ -137,8 +141,8 @@
 								</div>
 							</div>
 						</div>
-						
-						
+
+
 						<!-- gallery-slider that goes below the picture -->
 						<!-- this should be made scrollable/fixed size -->
 						<div class="row">
@@ -154,14 +158,14 @@
 								</div>
 							</div>
 						</div>
-							
+
 					</div>
-					
+
 				</div>
 			</div>
-			
+
 		</section>
-		
+
 		<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -215,17 +219,19 @@
 		<script src="/js/gallery_page.js"></script>
 
 		<!-- our homemade js files -->
-		<script>
+    <script>
 			$(document).ready(function () {
 				//Navigation menu slider
 				$('#nav-expander').on('click', function (e) {
 					e.preventDefault();
 					$('body').toggleClass('nav-expanded');
+          $('#cover').toggleClass('show');
 					console.log("hi");
 				});
 				$('#nav-close').on('click', function (e) {
 					e.preventDefault();
 					$('body').removeClass('nav-expanded');
+          $('#cover').removeClass('show');
 					console.log("bye");
 				});
 			});
