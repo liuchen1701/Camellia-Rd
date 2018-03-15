@@ -453,17 +453,39 @@ header.masthead img {
 /**********************************************************************/
 /* styling for press page
 /**********************************************************************/
-#press {
-	min-height: 100%;
+#press hr {
+	width: 88%;
 }
 
-.press-logo {
-/*	margin: 30px 0 30px 0;*/
-	padding: 30px;
+.press-card {
+	text-align: center;
 }
 
-.press-logo:hover {
-	background-color: var(--secondary-color);
+.press-card a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.press-card a:hover {
+	color: var(--secondary-color);
+}
+
+.press-card p {
+	margin-top: 10px;
+}
+
+.press-card div {
+	padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+	.press-text {
+		text-align: left;
+	}
+
+	.press-card .col-md-4 {
+		text-align: right;
+	}
 }
 
 /**********************************************************************/
