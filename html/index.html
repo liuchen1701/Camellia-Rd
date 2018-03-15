@@ -318,6 +318,10 @@
 				marker.addListener('click', function() {
 					window.location.href = this.url;
 				});
+
+				var infoWindow = new google.maps.InfoWindow();
+				infoWindow.setContent('<p>' + '8199 Clairemont Mesa Blvd.' + '<br>' + 'Ste H' + '<br>' + 'San Diego, CA 92111' + '</p>');
+				infoWindow.open(map, marker);
 			}
 		</script>
 		<script src="https://maps.googleapis.com/maps/api/js?callback=camelliaRdMap"></script>
