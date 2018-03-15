@@ -271,7 +271,7 @@ header.masthead img {
 }
 
 #page-top section {
-	margin: 50px 0;
+	margin-top: 50px;
 }
 
 @media (min-width: 992px) {
@@ -531,10 +531,15 @@ iframe {
 	}
 }
 
+hr {
+	width: 50%;
+}
+
 /**********************************************************************/
 /* styling for footer
 /**********************************************************************/
 footer {
+	margin-top: 50px;
 	background: var(--primary-color);
 	color: var(--text-dark);
 	border-top: 1px solid var(--text-light);
