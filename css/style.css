@@ -596,6 +596,8 @@ footer {
 
 #map {
 	margin: 0 auto;
+	width: 250px;
+	height: 200px;
 }
 
 .footer-content.social-media {
