@@ -315,6 +315,10 @@ header.masthead img {
 	text-align: center;
 }
 
+#menu div > a {
+	width: 100%;
+}
+
 .menu-item {
 	text-align: left;
 	color: var(--text-dark);
@@ -355,6 +359,16 @@ header.masthead img {
 
 #submenu .menu-slide img {  /* TODO: make this responsive and look better */
 	width: 100%;
+}
+
+#submenu a.header {
+	z-index: 0;
+	color: var(--text-dark);
+}
+
+#submenu a.header:hover {
+	text-decoration: none;
+	color: var(--text-light);
 }
 
 .menu-slide {
@@ -453,9 +467,6 @@ header.masthead img {
 /**********************************************************************/
 /* styling for press page
 /**********************************************************************/
-#press hr {
-	width: 88%;
-}
 
 .press-card {
 	text-align: center;
@@ -475,7 +486,7 @@ header.masthead img {
 }
 
 .press-card div {
-	padding-top: 10px;
+	padding: 30px;
 }
 
 @media (min-width: 768px) {
