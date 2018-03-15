@@ -36,6 +36,10 @@
 			</ul>
 		</nav>
 
+    <div id="cover">
+
+    </div>
+
 		<div class="container-fluid navbar justify-content-lg-center">
 			<a class="navbar-brand ml-4 order-4" href="../index.html">
 				<img src="../../img/logo-transparent.png" width ="159.5" height="48.3">
@@ -605,17 +609,19 @@
 		<!-- our homemade js files -->
 		<script src="/js/gallery_page.js"></script>
 
-		<script>
+    <script>
 			$(document).ready(function () {
 				//Navigation menu slider
 				$('#nav-expander').on('click', function (e) {
 					e.preventDefault();
 					$('body').toggleClass('nav-expanded');
+          $('#cover').toggleClass('show');
 					console.log("hi");
 				});
 				$('#nav-close').on('click', function (e) {
 					e.preventDefault();
 					$('body').removeClass('nav-expanded');
+          $('#cover').removeClass('show');
 					console.log("bye");
 				});
 			});

@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="website for Camellia Rd">
 	<meta name="author" content="LeDaniel Leung, Chen Liu, Lilia Wong, Henry Zhou">
-		
+
 	<title>Camellia Rd</title>
 
 	<link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
-		
+
 	<!-- Bootstrap core CSS -->
 	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		
+
 	<!-- Font Awesome Icons CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 	<!-- Our CSS Sheet -->
 	<link href="../css/style.css" rel="stylesheet">
-		
+
   </head>
-	
+
   <body>
-		
+
 		<!-- Navigation --> <!-- todo: fix navbar menu -->
 		<nav class="pt-2">
 			<ul class="list-unstyled nav-menu">
@@ -35,26 +35,30 @@
 				<li><a class="nav-item nav-link mr-4 live-page" href="careers.html">Jobs</a></li>
 			</ul>
 		</nav>
-		
+
+    <div id="cover">
+
+    </div>
+
 		<div class="container-fluid navbar justify-content-lg-center">
 			<a class="navbar-brand ml-4 order-4" href="index.html#page-top">
 				<img src="../img/logo-transparent.png" width ="159.5" height="48.3">
 			</a>	<!-- 2074 x 628 -->
-			
+
 			<a class="nav-item nav-link button-to-about-row order-1" href="index.html#about">About</a>
 			<a class="nav-item nav-link order-2" href="menu.html">Menu</a>
 			<a class="nav-item nav-link order-3" href="services.html">Catering</a>
 			<a class="nav-item nav-link order-5" href="press.html">Press</a>
 			<a class="nav-item nav-link order-6" href="merchandise.html">Merchandise</a>
 			<a class="nav-item nav-link order-7 live-page" href="careers.html">Jobs</a>
-			
+
 			<div class="navbar-header pull-right mr-4 order-8">
 				<a id="nav-expander" class="nav-expander">
 					<i class="fa fa-bars fa-lg white"></i>
 				</a>
 			</div>
 		</div>
-	
+
 		<section id="careers">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -65,7 +69,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 				<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -109,28 +113,30 @@
 				&copy; Camellia Rd 2018
 			</div>
 		</footer>
-		
+
 		<!-- Bootstrap core JavaScript -->
 		<script src="../vendor/jquery/jquery.min.js"></script>
 		<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		
+
 		<!-- homemade js -->
-		<script>
+    <script>
 			$(document).ready(function () {
 				//Navigation menu slider
 				$('#nav-expander').on('click', function (e) {
 					e.preventDefault();
 					$('body').toggleClass('nav-expanded');
+          $('#cover').toggleClass('show');
 					console.log("hi");
 				});
 				$('#nav-close').on('click', function (e) {
 					e.preventDefault();
 					$('body').removeClass('nav-expanded');
+          $('#cover').removeClass('show');
 					console.log("bye");
 				});
 			});
 		</script>
-		
+
   </body>
-	
+
 </html>
