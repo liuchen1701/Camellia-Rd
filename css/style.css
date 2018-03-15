@@ -594,37 +594,12 @@ footer {
 	margin-bottom: 10px;
 }
 
-.popup-container {
-	max-width: 220px;
-	margin: 0 auto;
-}
-
-#close-btn {
-	display: none;
-	float: right;
-}
-
 #map {
-	display: none;
 	margin: 0 auto;
-}
-
-.marker-btn {
-	background-color: #fff;
-	border: none;
 }
 
 .footer-content.social-media {
   text-align: center;
-}
-
-.fa-map-marker {
-	color: #ff0000;
-	font-size: 30px;
-}
-
-.fa-map-marker:hover {
-	cursor: pointer;
 }
 
 .social-media a {
