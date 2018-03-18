@@ -10,7 +10,7 @@ function about() {
 
     var current_height = $(window).scrollTop();
 
-    console.log("landing@:\t" + landing_height + "\nnav@:\t" + nav_height + "\npage@:\t" + current_height);
+//    console.log("landing@:\t" + landing_height + "\nnav@:\t" + nav_height + "\npage@:\t" + current_height);
 
     if(current_height >= landing_height - nav_height) {
         var about_button = document.getElementsByClassName("button-to-about")[0];

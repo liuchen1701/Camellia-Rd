@@ -75,6 +75,14 @@ a.live-page {
 	color: var(--text-light);
 }
 
+.fa-times {
+	color: var(--text-dark);
+}
+
+.fa-times:hover {
+	color: var(--text-light);
+}
+
 /**********************************************************************/
 /* for centered divs
 /**********************************************************************/
@@ -518,13 +526,26 @@ header.masthead img {
 	padding-top: 10px;
 }
 
+.fa-truck, .fa-leaf {
+	font-size: 200px;
+	color: var(--highlight-color);
+}
+
 @media (min-width: 768px) {
-	.service-text {
+	.service-card-primary .service-text {
 		text-align: left;
 	}
-
-	.service-card .col-md-4 {
+	
+	.service-card-primary .col-md-4 {
 		text-align: right;
+	}
+	
+	.service-card-secondary .service-text {
+		text-align: right;
+	}
+	
+	.service-card-secondary .col-md-4 {
+		text-align: left;
 	}
 }
 
@@ -552,12 +573,13 @@ header.masthead img {
 /**********************************************************************/
 .forms {
 	margin-top: 30px;
+	
 }
 
 iframe {
 	height: 700px;
-	max-width: 760px;
-	min-width: 90%;
+/*	max-width: 75%;*/
+	min-width: 100%;
 }
 
 /**********************************************************************/

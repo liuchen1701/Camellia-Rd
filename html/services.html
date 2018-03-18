@@ -45,13 +45,11 @@
 					e.preventDefault();
 					$('body').toggleClass('nav-expanded');
           $('#cover').toggleClass('show');
-					console.log("hi");
 				});
 				$('#nav-close').on('click', function (e) {
 					e.preventDefault();
 					$('body').removeClass('nav-expanded');
           $('#cover').removeClass('show');
-					console.log("bye");
 				});
 			});
 		</script>
@@ -75,25 +73,49 @@
 			</div>
 		</div>
 
+		
+		<div class="modal fade forms" id="cateringForm" tabindex="-1" role="dialog" aria-labelledby="cateringFormLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Drop a Line</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeo8W9EVI5qooAf4e6yXMswEp5mdd4nvCDJqhPksq76PWdnAg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<section id="services">
 			<div class="container">
 				<div class="row p-2 justify-content-center">
-					<h1>Services</h1>
+					<h1>We Deliver!</h1>
 					<div class="col-12">
 						<h2>Catering Requests</h2>
-						<p>A description about their catering service here.</p>
-						<div class="forms">
-<!--						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeo8W9EVI5qooAf4e6yXMswEp5mdd4nvCDJqhPksq76PWdnAg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+						<div class="row service-card-primary">
+							<div class="col-12 col-md-4 pr-md-5">
+<!--								<i class="fa fa-leaf"></i>-->
+								<i class="fa fa-truck"></i>
+							</div>
+							<div class="col-12 col-md-8 pt-4 service-text">
+								<p>Drinks and snacks for parties, weddings, office events, and more.</p>
+								<p>We'll deliver fresh drinks wherever you are!</p>
+							<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cateringForm">Drop a Line</button>
 						</div>
+							</div>
 						<hr>
 					</div>
 					<div class="col-12">
 						<h2>Door Dash</h2>
-						<div class="row justify-content-center service-card">
-							<div class="col-md-4">
+						<div class="row service-card-secondary">
+							<div class="col-12 col-md-4 order-md-last">
 								<img id="dd-logo" src="../img/doordash-square-red.jpg"/>
 							</div>
-							<div class="col-md-8 service-text">
+							<div class="col-12 col-md-8 pt-4 service-text">
 								<p>Get your boba milk tea delivered!</p>
 								<p>We've partnered with DoorDash to get your favorite boba milk teas delivered right to you.</p>
 								<a class="btn btn-secondary" href="https://www.doordash.com/store/camellia-road-tea-bar-san-diego-156799/">Order Deliery</a>
