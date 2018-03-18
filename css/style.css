@@ -393,11 +393,12 @@ header.masthead img {
 	color: var(--text-dark);
 	height: 30px;
 	padding-top: 2px;
+	border: 1px solid var(--primary-color);
 }
 
-.table-entry:hover {
-	background-color: var(--secondary-color);
+.table-entry:not(.active):hover {
 	cursor: pointer;
+	border: 1px solid var(--text-light);
 }
 
 .table-entry.active {

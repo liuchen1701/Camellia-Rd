@@ -116,49 +116,6 @@
 							</div>
 						</div>
 
-						<div class="row menu-slide">
-							<div class="col-md-7 col-sm-12 item-photo">
-								<img src="/img/default-photos/IMG_3687.JPG">
-							</div>
-							<div class="col-md-5 col-sm-12">
-								<div class="row gallery-selector">
-									<div class="col table-entry" onclick="currentSlide(1)">
-										<p>Itemname</p>
-									</div>
-									<div class="col table-entry" onclick="currentSlide(2)">
-										<p>Itemname</p>
-									</div>
-									<div class="col active table-entry">
-										<p>Itemname</p>
-									</div>
-								</div>
-								<hr>
-								<div class="row item-description">
-									<div class="col">
-										<p>Item Description goes here.</p>
-										<p>Maybe caffeine level here?</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<!-- gallery-slider that goes below the picture -->
-						<!-- this should be made scrollable/fixed size -->
-						<div class="row">
-							<div class="col-md-7 gallery-slider">
-								<div class="thumbnail">
-									<img src="/img/default-photos/IMG_3685.JPG" onclick="currentSlide(1)" alt="Itemname 1">
-								</div>
-								<div class="thumbnail">
-									<img src="/img/default-photos/IMG_3686.JPG" onclick="currentSlide(2)" alt="Itemname 2">
-								</div>
-								<div class="thumbnail">
-									<img src="/img/default-photos/IMG_3687.JPG" onclick="currentSlide(3)" alt="Itemname 2">
-								</div>
-							</div>
-						</div>
-
 					</div>
 
 				</div>
@@ -222,13 +179,11 @@
 					e.preventDefault();
 					$('body').toggleClass('nav-expanded');
           $('#cover').toggleClass('show');
-					console.log("hi");
 				});
 				$('#nav-close').on('click', function (e) {
 					e.preventDefault();
 					$('body').removeClass('nav-expanded');
           $('#cover').removeClass('show');
-					console.log("bye");
 				});
 			});
 		</script>
