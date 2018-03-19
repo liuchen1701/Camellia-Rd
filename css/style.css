@@ -667,3 +667,7 @@ footer {
   position:absolute;
   top:-130px;
 }
+
+.job-form {
+	height: 1180px;
+}
