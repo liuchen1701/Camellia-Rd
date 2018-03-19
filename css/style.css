@@ -123,6 +123,11 @@ a.live-page {
 	color: var(--text-light);
 }
 
+#submenu a h1:hover i {
+	transform: translate(-20px, 0px);
+	color: var(--highlight-color);
+}
+
 i {
 	-webkit-transition: transform .5s;
 	-moz-transition: transform .5s;
@@ -284,6 +289,28 @@ header.masthead img {
 
 #landing-menu {
 	background-image: url("../img/Menu_Banner1.jpg");
+	background-position: 40% 30%;
+}
+
+#landing-services {
+	background-image: url("../img/ingredients-carousel/DSC02828.jpg");
+/*	background-position: 0% 50%;*/
+}
+
+#landing-merch {
+	background-image: url("../img/Merch_Banner.jpg");
+	background-position: 54% 62%;
+}
+
+#landing-press {
+	background-image: url("../img/about-carousel/DSC02759.jpg");
+}
+
+#landing-jobs {
+	background-image: url("../img/IMG_20180303_115608_1.jpg")
+}
+
+#landing-menu, #landing-services, #landing-merch, #landing-press, #landing-jobs {
 	margin-bottom: 30px;
 }
 
@@ -313,7 +340,7 @@ header.masthead img {
 /* styling for all pages
 /**********************************************************************/
 /* #menu, #press, #services, #merchandise, */ 
-#careers, #submenu {
+#submenu {
 	/* padding for all pages */
 	padding-top: 128px;
 }
@@ -415,7 +442,7 @@ header.masthead img {
 
 #submenu a.header:hover {
 	text-decoration: none;
-	color: var(--text-light);
+/*	color: var(--text-light);*/
 }
 
 .menu-slide {
