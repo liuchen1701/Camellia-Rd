@@ -285,6 +285,17 @@ header.masthead img {
 }
 
 /**********************************************************************/
+/* styling for all pages
+/**********************************************************************/
+/* #menu, #press, #services, #merchandise, */ 
+#careers, #submenu {
+	/* padding for all pages */
+	padding-top: 128px;
+	text-align: center;
+}
+
+
+/**********************************************************************/
 /* styling for info cards (formatting image and text content)
 /**********************************************************************/
 .info-secondary, .info-primary {
@@ -322,10 +333,8 @@ header.masthead img {
 /**********************************************************************/
 /* menu styling, and other pages
 /**********************************************************************/
-/* #menu, #press, #services, #merchandise, #careers, */ 
-#submenu {
-	/* padding for all pages */
-	padding-top: 128px;
+
+#menu {
 	text-align: center;
 }
 
