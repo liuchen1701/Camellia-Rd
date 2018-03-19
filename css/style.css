@@ -476,26 +476,40 @@ header.masthead img {
 /**********************************************************************/
 /* styling for press page
 /**********************************************************************/
+#press a {
+	text-decoration: none;
+	color: var(--text-dark);
+}
 
 .press-card {
 	text-align: center;
-}
-
-.press-card a {
-	text-decoration: none;
-	color: #000000;
-}
-
-.press-card a:hover {
-	color: var(--secondary-color);
 }
 
 .press-card p {
 	margin-top: 10px;
 }
 
-.press-card div {
-	padding: 30px;
+.press-card img {
+	height: 200px;
+	width: 200px;
+	margin-bottom: 30px;
+}
+
+#lighthouse-logo {
+	height: 220px;
+}
+
+.press-card {
+	padding-top: 30px ;
+	border: 1px solid var(--primary-color);
+}
+
+.press-card:hover {
+	border: 1px solid var(--secondary-color);
+}
+
+.press-card:hover .caret {
+	color: red;
 }
 
 @media (min-width: 768px) {
