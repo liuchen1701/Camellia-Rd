@@ -356,9 +356,10 @@ header.masthead img {
 .gallery {
 	left: 50%;
 	max-width: 720px;
-	height: auto;
+/*	max-height: 460px;*/
 	position: relative;
 	transform: translate(-50%);
+	overflow: hidden;
 }
 
 .gallery img {
