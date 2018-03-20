@@ -670,8 +670,13 @@ iframe {
 	overflow: hidden;
 }
 
-.ig-title {
-	margin-bottom: 20px;
+#ig-title {
+	margin-bottom: 0;
+}
+
+#ig-follow {
+	color: var(--text-light);
+	margin-bottom: 30px;
 }
 
 #instafeed img {
@@ -747,5 +752,5 @@ footer {
 }
 
 .job-form {
-	height: 1180px;
+	height: 1400px;
 }
