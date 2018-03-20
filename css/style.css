@@ -413,7 +413,7 @@ header.masthead img {
 	padding-top: 20px;
 }
 
-.menu-cat:hover {
+.menu-cat:hover:not(.toppings) {
 /*	background-color: var(--secondary-color); */
 	border: 1px solid var(--secondary-color);
 	cursor: pointer;
