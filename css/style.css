@@ -299,7 +299,7 @@ header.masthead img {
 
 #landing-merch {
 	background-image: url("../img/Merch_Banner.jpg");
-	background-position: 54% 62%;
+	background-position: 54% 63%;
 }
 
 #landing-press {
@@ -307,7 +307,7 @@ header.masthead img {
 }
 
 #landing-jobs {
-	background-image: url("../img/IMG_20180303_115608_1.jpg")
+	background-image: url("../img/IMG_20180303_115608_1.png")
 }
 
 #landing-menu, #landing-services, #landing-merch, #landing-press, #landing-jobs {
@@ -356,7 +356,7 @@ header.masthead img {
 .gallery {
 	left: 50%;
 	max-width: 720px;
-/*	max-height: 460px;*/
+	max-height: 480px;
 	position: relative;
 	transform: translate(-50%);
 	overflow: hidden;
