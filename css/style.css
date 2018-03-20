@@ -401,7 +401,6 @@ header.masthead img {
 
 #menu-container a {
 	text-decoration: none;
-	color: var(--text-dark);
 }
 
 #menu-container a:hover{
@@ -409,6 +408,7 @@ header.masthead img {
 }
 
 .menu-cat {
+	color: var(--text-dark);
 	border: 1px solid var(--primary-color);
 	padding-top: 20px;
 }
