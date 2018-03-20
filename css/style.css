@@ -110,7 +110,7 @@ a.live-page {
 /**********************************************************************/
 /* styling for animations
 /**********************************************************************/
-.press-card:hover i, .menu-cat:hover i {
+.press-card:hover i, .menu-cat:hover i, .ig-tag:hover i {
 	transform: translate(20px, 0px);
 	color: var(--highlight-color);
 }
@@ -258,7 +258,7 @@ body.nav-expanded {
 header.masthead {
   position: relative;
 	width: 100%;
-  min-height: 600px;
+  min-height: 500px;
 	margin-bottom: -10px;
   text-align: center;
 	display: inline-block;
@@ -303,11 +303,11 @@ header.masthead img {
 }
 
 #landing-press {
-	background-image: url("../img/about-carousel/DSC02759.jpg");
+	background-image: url("../img/community-carousel/DSC02759.jpg");
 }
 
 #landing-jobs {
-	background-image: url("../img/IMG_20180303_115608_1.png")
+	background-image: url("../img/community-carousel/IMG_20180303_115608_1.jpg")
 }
 
 #landing-menu, #landing-services, #landing-merch, #landing-press, #landing-jobs {
@@ -664,10 +664,23 @@ iframe {
 /**********************************************************************/
 /* styling for instagram feed
 /**********************************************************************/
-
 #ig-feed {
 	text-align: center;
 	overflow: hidden;
+}
+
+.ig-tag {
+	text-decoration: none;
+	color: var(--highlight-color);
+}
+
+.ig-tag i {
+	color: var(--primary-color);
+}
+
+.ig-tag:hover {
+	text-decoration: none;
+	color: var(--highlight-color);
 }
 
 #ig-title {
